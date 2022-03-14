@@ -5,73 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
 </head>
+
+
 
 <body>
     
     <form action="">
 
         <fieldset>
-            <legend>Username and Password</legend>
+            <legend>Survey about fish</legend>
 
-            <label>Username:</label>
+            <label>Name:</label>
             <br>
-            <input type="text" placeholder="Enter your username..." required>
+            <input type="text" placeholder="Enter your name..." required>
             <br>
-
-            <label>Password:</label>
-            <br>
-            <input type="password" placeholder="Enter your password..." required>
             <br>
 
             <label>Email:</label>
             <br>
-            <input type="email" placeholder="Enter your email...">
+            <input type="email" placeholder="Enter your email..." required>
+            <br>
             <br>
 
-            <label>Phone Number:</label>
+            <label>Today's Date:</label>
             <br>
-            <input type="number" placeholder="Enter your phone number...">
+            <input type="date" required>
+            <br>
             <br>
 
-            <label>Tell us about you:</label>
+            <label>Do you like fish?</label>
+            <br>
+            <input type="radio" name="radio"><label>Yes</label>
+            <input type="radio" name="radio"><label>Maybe</label>
+            <input type="radio" name="radio"><label>No</label>
+            <br><br>
+
+            <label>What is your favorite common pet store fish?</label>
+            <br>
+            <input type="checkbox" name="box"><label>Tropical</label>
+            <input type="checkbox" name="box"><label>Saltwater</label>
+            <input type="checkbox" name="box"><label>Goldfish</label>
+            <br>
+            <br>
+
+            <label>What do you think fish do at night?</label>
             <br>
             <textarea placeholder="Enter text here..."></textarea>
 
             <br>
             <button type="submit">Submit</button>
             
-        </fieldset>
-
-        <fieldset>
-            <legend>Check Boxes</legend>
-
-            <label>Box:</label>
-            <br>
-            <input type="checkbox" name="box" checked><label>box 1</label>
-            <input type="checkbox" name="box"><label>box 2</label>
-            <input type="checkbox" name="box"><label>box 3</label>
-
-            <br>
-            <label>Circle:</label>
-            <br>
-            <input type="radio" name="radio"><label>circle 1</label>
-            <input type="radio" name="radio" checked><label>circle 2</label>
-            <input type="radio" name="radio"><label>circle 3</label>
-        </fieldset>
-
-        <fieldset>
-            <legend>Today's Date and Time</legend>
-
-            <label>Today's Date:</label>
-            <br>
-            <input type="date">
-            <br>
-
-            <label>Time:</label>
-            <br>
-            <input type="time">
-            <br>
         </fieldset>
 
     </form>

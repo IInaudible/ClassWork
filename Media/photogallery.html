@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        img {
+            width: 100%;
+        }
+
+        #photogallery  {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+        }
+
+        figure {
+            background-color: aqua;
+            padding: 20px;
+        }
+
+        figcaption {
+            background-color: aquamarine;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        figure img {
+            height: 600px;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="photogallery">
+
+        <figure>
+            <img src="images/waterfall.jpg" alt="waterfall in the woods">
+            <figcaption>Waterfall in the woods.</figcaption>
+        </figure>
+
+        <figure>
+            <picture>
+                <source srcset="images/rockwater.jpg" media="(max-width: 800px)">
+
+                <img src="images/waterdrop.jpg" alt="waterdrop">
+            </picture>
+
+            <figcaption>Water drop.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/waterdropcolors.jpg" alt="waterdrop with colors">
+            <figcaption>Water drop with colors.</figcaption>
+        </figure>
+
+    </div>
+    
+</body>
+</html>
